@@ -91,11 +91,11 @@ proxy-providers:
     type: http
 
     # 修改成你的订阅地址
-    url: "https://mdzixh.yau96.com/config?token=dcb7ff916d25729f4c61d2f1ce0c90b9"
+    url: "https://kjuobq.yau96.com/config?token=d0cff327fe324fc540b4acaa6592c477"
 
     path: ./proxy_providers/node.yaml
 
-    interval: 900
+    interval: 7200
 
 
     health-check:
@@ -104,7 +104,7 @@ proxy-providers:
 
       url: http://www.gstatic.com/generate_204
 
-      interval: 300
+      interval: 7200
 
 
 # =====================
@@ -144,60 +144,77 @@ proxies:
     obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
 
 
-  - name: "香港03-HY2"
-    type: hysteria2
-    server: jp01ngnmsl.sys-metric-report.com
-    port: 26516
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: jpngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
+ # =====================
+# 香港 SS
+# =====================
+
+  - name: "香港A"
+
+    type: ss
+
+    server: pro.relay.hka.sys-metric-report.com
+
+    port: 27003
+
+    cipher: chacha20-ietf-poly1305
+
+    password: 485c7cbb-f10b-4ec3-84d0-f017fd566308
+
+    udp: true
 
 
 
-  - name: "香港04-HY2"
-    type: hysteria2
-    server: jp02ngnmsl.sys-metric-report.com
-    port: 22346
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: jpngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
+  - name: "香港B"
+
+    type: ss
+
+    server: pro.relay.hkb.sys-metric-report.com
+
+    port: 27010
+
+    cipher: chacha20-ietf-poly1305
+
+    password: 485c7cbb-f10b-4ec3-84d0-f017fd566308
+
+    udp: true
 
 
 
-  - name: "香港05-HY2"
-    type: hysteria2
-    server: jp03ngnmsl.sys-metric-report.com
-    port: 23275
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: jpngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
+  - name: "香港C"
+
+    type: ss
+
+    server: pro.relay.hkc.sys-metric-report.com
+
+    port: 27011
+
+    cipher: chacha20-ietf-poly1305
+
+    password: 485c7cbb-f10b-4ec3-84d0-f017fd566308
+
+    udp: true
+
+
+
+  - name: "香港D"
+
+    type: ss
+
+    server: pro.relay.hkd.sys-metric-report.com
+
+    port: 27012
+
+    cipher: chacha20-ietf-poly1305
+
+    password: 485c7cbb-f10b-4ec3-84d0-f017fd566308
+
+    udp: true
 
 
 
 
-  - name: "香港06-HY2"
-    type: hysteria2
-    server: sgp01ngnmsl.sys-metric-report.com
-    port: 22909
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: sgpngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
+
+
 
 
 
@@ -217,7 +234,7 @@ proxies:
 
     password: 5iD0lGzcgcKh
 
-    udp: true
+    udp: false
 
     dialer-proxy: "香港前置"
     
@@ -236,17 +253,17 @@ proxy-groups:
 
       - "香港01-HY2"
       - "香港02-HY2"
-      - "香港03-HY2"
-      - "香港04-HY2"
-      - "香港05-HY2"
-      - "香港06-HY2"
+      - "香港A"
+      - "香港B"
+      - "香港C"
+      - "香港D"
 
 
     url: http://www.gstatic.com/generate_204
 
-    interval: 300
+    interval: 7200
 
-    tolerance: 50
+    tolerance: 7200
 
 
 
