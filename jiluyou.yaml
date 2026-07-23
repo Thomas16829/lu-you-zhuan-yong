@@ -119,37 +119,6 @@ proxies:
 
 
 # =====================
-# 香港 HY2
-# =====================
-
-  - name: "香港01-HY2"
-    type: hysteria2
-    server: hk01ngnmsl.sys-metric-report.com
-    port: 23750
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: hkngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
-
-
-  - name: "香港02-HY2"
-    type: hysteria2
-    server: hk02ngnmsl.sys-metric-report.com
-    port: 23750
-    password: dd0b344b-db38-47c8-b193-cc9e4ff41fbe
-    sni: hkngnmsl.cfastcdn.com
-    skip-cert-verify: false
-    up: "1000 Mbps"
-    down: "1000 Mbps"
-    obfs: salamander
-    obfs-password: "OGQ0N2E4NzQ2YmE4MTBjMw=="
-
-
-
-# =====================
 # 香港 SS
 # =====================
 
@@ -220,10 +189,7 @@ proxy-groups:
     type: url-test
 
     proxies:
-
-      - "香港01-HY2"
-      - "香港02-HY2"
-
+    
       - "香港A"
       - "香港B"
       - "香港C"
