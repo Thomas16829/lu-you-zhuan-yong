@@ -424,7 +424,7 @@ socks-port: 23456
 redir-port: 23457
 allow-lan: true
 mode: rule
-log-level: info
+log-level: warning
 
 # 性能优化
 tcp-concurrent: true
