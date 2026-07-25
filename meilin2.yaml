@@ -126,10 +126,10 @@ proxy-groups:
 
       - "香港01-HY2"
       - "香港02-HY2"
-      - "香港A"
-      - "香港B"
-      - "香港C"
-      - "香港D"
+      - "香港03-HY2"
+      - "香港04-HY2"
+      - "香港05-HY2"
+      - "香港06-HY2"
 
 
     url: http://www.gstatic.com/generate_204
