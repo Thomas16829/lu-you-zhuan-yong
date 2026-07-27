@@ -165,22 +165,24 @@ rules:
 # 自动中转
 # =====================
 
-
 # Play 商店 APP
 
+  - PROCESS-NAME,com.android.vending,住宅链式代理
 
 
 # Google Play 服务
 
+  - PROCESS-NAME,com.google.android.gms,住宅链式代理
 
 
 # Google 服务框架
 
+  - PROCESS-NAME,com.google.android.gsf,住宅链式代理
 
 
 # Android 下载管理
 
-
+  - PROCESS-NAME,com.android.providers.downloads,住宅链式代理
 
 
 # Google 登录认证
@@ -254,14 +256,16 @@ rules:
   - IP-CIDR,74.125.0.0/16,住宅链式代理,no-resolve
 
   - IP-CIDR,173.194.0.0/16,住宅链式代理,no-resolve
+
+# =====================
+# 国内直连
 # =====================
 
+  - GEOSITE,cn,DIRECT
 
-# 国内直连
+  - GEOIP,CN,DIRECT
 
-
-
-
+# =====================
 # YouTube
 # =====================
 
